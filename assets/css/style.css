@@ -437,3 +437,114 @@ a {
     line-height: 1.72; /* 171.429% */
     color: var(--text-color-lg);
 }
+
+/* =========== About =========== */
+.main__about {
+    margin-top: 157px;
+}
+
+.about__container {
+    position: relative;
+    display: flex;
+}
+
+.about--line {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 2;
+}
+
+.about--flower {
+    position: absolute;
+    top: 10px;
+    left: -45px;
+    z-index: 2;
+}
+
+.about__images {
+    width: 57%;
+    margin-top: 90px;
+    display: flex;
+    gap: 21px;
+}
+
+.about__images--item {
+    width: 284px;
+    height: 480px;
+    flex-shrink: 0;
+    border-radius: 210px;
+    object-fit: cover;
+    box-shadow: 0 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__images--item#img-2 {
+    margin-top: -77px;
+}
+
+.about__text {
+    position: relative;
+    width: 43%;
+    padding-left: 7px;
+    color: var(--primary-color-black);
+}
+
+.about__text--sub-title {
+    margin-left: 46px;
+    font-weight: 500;
+    line-height: 1.125; /* 112.5% */
+}
+
+.about__text--sub-title::before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: "";
+    width: 25px;
+    height: 1px;
+    flex-shrink: 0;
+    background: var(--primary-color-black);
+}
+
+.about__text--title {
+    margin-top: 20px;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.about__text--desc {
+    margin-top: 11px;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+    color: var(--text-color-lg);
+}
+
+.about__text--info {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color-black);
+}
+
+.about__info--num {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.about__info--desc {
+    margin-left: 24px;
+    width: 364px;
+    max-width: 100%;
+    font-weight: 500;
+    line-height: 1.72; /* 171.429% */
+    color: var(--text-color-lg);
+}
+
+.about--separation {
+    margin-top: 20px;
+    width: 485px;
+    height: 1px;
+    background: var(--second-color-blue);
+}
