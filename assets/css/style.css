@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-poppins: "Poppins", sans-serif;
+    --font-public-sans: "Public Sans", sans-serif;
+    --font-sonsie: "Sonsie One", system-ui;
+    --primary-color-bg: #143C3C;
+    --primary-color-black: #152427;
+    --second-color-blue: #83A17D;
+    --second--color-lg: #E2EDDF;
+    --text-color: #575D5E;
+    --text-color-white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+    font-family: var(--font-poppins);
+}
