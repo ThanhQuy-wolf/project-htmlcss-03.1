@@ -13,8 +13,97 @@
         />
         <!-- Favicon -->
         <!-- CSS -->
-         <link rel="stylesheet" href="./assets/css/reset.css">
-         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body></body>
+
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container common__container">
+                <img src="./assets/img/logo.svg" alt="" class="header--logo" />
+
+                <nav class="header__nav">
+                    <a href="#home" class="header__nav--item">Home</a>
+                    <a href="#about" class="header__nav--item">About</a>
+                    <a href="#blog" class="header__nav--item">Blog</a>
+                    <a href="#contact" class="header__nav--item">Contact</a>
+                </nav>
+
+                <a href="#!" class="header--btn common--btn">Sign Up</a>
+            </div>
+            <div class="header--separation"></div>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <article class="main__container">
+                <!-- Hero -->
+                <section class="main__hero">
+                    <div class="hero__container common__container">
+                        <!-- Background -->
+                        <div class="hero__bg--circle"></div>
+
+                        <div class="hero__bg--box-line" id="line-1">
+                            <img
+                                src="./assets/img/hero-flower-1.svg"
+                                alt=""
+                                class="hero__bg--flower-line"
+                            />
+                            <img
+                                src="./assets/img/hero-line-1.svg"
+                                alt=""
+                                class="hero__bg--line"
+                            />
+                        </div>
+
+                        <div class="hero__bg--box-line" id="line-2">
+                            <img
+                                src="./assets/img/hero-flower-2.svg"
+                                alt=""
+                                class="hero__bg--flower-line"
+                            />
+                            <img
+                                src="./assets/img/hero-line-2.svg"
+                                alt=""
+                                class="hero__bg--line"
+                            />
+                        </div>
+
+                        <!-- Text -->
+                        <article class="hero__text">
+                            <h1 class="hero--title">We're a creative design agency.</h1>
+                            <p class="hero--desc">A brilliant, modular agency template for startup's build yours toady.</p>
+
+                            <div class="hero__cta">
+                                <a href="" class="hero__cta--btn common--btn">Get in touch</a>
+
+                                <div class="hero__cta--box">
+                                    <img
+                                        src="./assets/img/hero-cta-1.svg"
+                                        alt=""
+                                        class="cta__box--image"
+                                    />
+                                    <img
+                                        src="./assets/img/hero-cta-2.svg"
+                                        alt=""
+                                        class="cta__box--image" id="play"
+                                    />
+                                    <span class="cta__box--desc">Watch Video</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Images -->
+                        <figure class="hero__images">
+                            <img src="./assets/img/hero-img-1.png" alt="" class="hero__images--item" id="start">
+                            <img src="./assets/img/hero-img-2.png" alt="" class="hero__images--item" id="middle">
+                            <img src="./assets/img/hero-img-3.png" alt="" class="hero__images--item" id="end">
+                        </figure>
+
+                    </div>
+                </section>
+            </article>
+        </main>
+    </body>
 </html>
