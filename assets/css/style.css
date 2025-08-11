@@ -6,11 +6,12 @@
     --font-poppins: "Poppins", sans-serif;
     --font-public-sans: "Public Sans", sans-serif;
     --font-sonsie: "Sonsie One", system-ui;
-    --primary-color-bg: #143C3C;
+    --primary-color-bg: #143c3c;
     --primary-color-black: #152427;
-    --second-color-blue: #83A17D;
-    --second--color-lg: #E2EDDF;
-    --text-color-bg: #575D5E;
+    --second-color-blue: #83a17d;
+    --second--color-lg: #e2eddf;
+    --text-color-lg: #7d8188;
+    --text-color-bg: #575d5e;
     --text-color-white: #fff;
 }
 
@@ -19,7 +20,7 @@ html {
 }
 
 body {
-    padding-top: 28px;
+    /* padding-top: 28px; */
     font-size: 1.6rem;
     scroll-behavior: smooth;
     font-family: var(--font-poppins);
@@ -57,8 +58,11 @@ a {
 
 .header {
     position: sticky;
-    top: -28px;
+    top: -18px;
+    padding-top: 28px;
     font-family: var(--font-public-sans);
+    background: var(--text-color-white);
+    z-index: 1000;
 }
 
 .header__container {
@@ -87,8 +91,8 @@ a {
 
 .header__nav a[href="#home"]::before {
     position: absolute;
-    bottom: -29px;
-    left: 0;
+    bottom: -19px;
+    left: 16px;
     content: "";
     width: 16px;
     height: 2px;
@@ -107,7 +111,12 @@ a {
     margin-top: 13px;
     width: 1140px;
     height: 1px;
-    background: linear-gradient(90deg, #FFF 0%, #DDDCDC 51.09%, rgba(212, 212, 212, 0.00) 99.68%);
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
 }
 
 /* =========== Hero =========== */
@@ -129,7 +138,7 @@ a {
     border-radius: 340px;
     filter: blur(137px);
     z-index: -1;
-    background: #4DBB9A;
+    background: #4dbb9a;
 }
 
 .hero__bg--box-line {
@@ -282,7 +291,7 @@ a {
 .logo__list--discord {
     font-size: 2.6rem;
     font-weight: 400;
-    color: #163C35;
+    color: #163c35;
 }
 
 .logo__list--riotinto {
@@ -295,4 +304,136 @@ a {
     font-size: 1.9rem;
     font-weight: 600;
     letter-spacing: 1.995px;
+}
+
+/* =========== Services =========== */
+.main__services {
+    margin-top: 106px;
+}
+
+.services__container {
+    padding-bottom: 15px;
+}
+
+.services__text {
+    display: flex;
+}
+
+.services__text--content {
+    width: 46%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color-black);
+}
+
+.services__text--sub-title {
+    margin-left: 46px;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+}
+
+.services__text--sub-title::after {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: "";
+    width: 25px;
+    height: 1px;
+    flex-shrink: 0;
+    background: var(--primary-color-black);
+}
+
+.services__text--title {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.services__text--title::after {
+    position: absolute;
+    right: 103px;
+    bottom: 19px;
+    content: "";
+    width: 66px;
+    height: 2px;
+    flex-shrink: 0;
+    background: var(--primary-color-black);
+}
+
+.services__text--btn-trans {
+    align-self: flex-end;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    color: var(--primary-color-bg);
+}
+
+.services--btn {
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background: var(--second--color-lg);
+    transition: 0.3s ease;
+}
+
+.services--btn:hover {
+    color: var(--second--color-lg);
+    background: var(--primary-color-bg);
+}
+
+.services__card {
+    margin-top: 76px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    column-gap: 16px;
+}
+
+.services__card--item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 477px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+
+.services__card--item:hover {
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.services__card--image {
+    height: 318px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.services__card--content {
+    padding-top: 24px;
+    transition: 0.2s ease;
+}
+
+.services__card--item:hover .services__card--content {
+    padding: 24px 18px 23px;
+}
+
+.services__card--title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--primary-color-black);
+}
+
+.services__card--desc {
+    margin-top: 18px;
+    width: 268px;
+    max-width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.72; /* 171.429% */
+    color: var(--text-color-lg);
 }

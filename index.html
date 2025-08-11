@@ -11,6 +11,14 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Sonsie+One&display=swap"
             rel="stylesheet"
         />
+        <!-- Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- Favicon -->
         <!-- CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -36,7 +44,7 @@
         </header>
 
         <!-- Main -->
-        <main>
+        <main style="height: 5000px;">
             <article class="main__container">
                 <!-- Hero -->
                 <section class="main__hero">
@@ -136,7 +144,11 @@
                         </div>
 
                         <div class="logo__list" id="slack">
-                            <img src="./assets/img/slack-logo.svg" alt="Slack" class="logo__list--icon" />
+                            <img
+                                src="./assets/img/slack-logo.svg"
+                                alt="Slack"
+                                class="logo__list--icon"
+                            />
                             <span class="logo__list--slack">slack</span>
                         </div>
 
@@ -154,12 +166,97 @@
                         </div>
 
                         <div class="logo__list" id="heroku">
-                            <img src="./assets/img/heroku-logo.svg" alt="HEROKU" class="logo__list--icon" />
+                            <img
+                                src="./assets/img/heroku-logo.svg"
+                                alt="HEROKU"
+                                class="logo__list--icon"
+                            />
                             <span class="logo__list--heroku">HEROKU</span>
                         </div>
                     </div>
                 </section>
 
+                <!-- Services -->
+                <section class="main__services">
+                    <div class="services__container common__container">
+                        <article class="services__text">
+                            <div class="services__text--content">
+                                <span class="services__text--sub-title"
+                                    >OUR SERVICES</span
+                                >
+                                <h2 class="services__text--title">
+                                    We offer a wide range of design services
+                                </h2>
+                            </div>
+
+                            <div class="services__text--btn-trans">
+                                <button class="services--btn">
+                                    <i
+                                        class="fa-solid fa-arrow-left"
+                                        id="arrow--left"
+                                    ></i>
+                                </button>
+
+                                <button class="services--btn">
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        id="arrow--right"
+                                    ></i>
+                                </button>
+                            </div>
+                        </article>
+
+                        <div class="services__card">
+                            <figure class="services__card--item">
+                                <img
+                                    src="./assets/img/services-img-1.png"
+                                    alt="Branding"
+                                    class="services__card--image"
+                                />
+                                <div class="services__card--content">
+                                    <h3 class="services__card--title">Branding</h3>
+                                    <p class="services__card--desc">
+                                        Create beautiful Agency website with
+                                        Boluethat converts more visitors than any
+                                        website.
+                                    </p>
+                                </div>
+                            </figure>
+
+                            <figure class="services__card--item">
+                                <img
+                                    src="./assets/img/services-img-2.png"
+                                    alt="Web Design"
+                                    class="services__card--image"
+                                />
+                                <div class="services__card--content">
+                                    <h3 class="services__card--title">Web Design</h3>
+                                    <p class="services__card--desc">
+                                        Create beautiful Agency website with
+                                        Boluethat converts more visitors than any
+                                        website.
+                                    </p>
+                                </div class="services__card--content">
+                            </figure>
+
+                            <figure class="services__card--item">
+                                <img
+                                    src="./assets/img/services-img-3.png"
+                                    alt="Graphic Design"
+                                    class="services__card--image"
+                                />
+                                <div class="services__card--content">
+                                    <h3 class="services__card--title">Graphic Design</h3>
+                                    <p class="services__card--desc">
+                                        Create beautiful Agency website with
+                                        Boluethat converts more visitors than any
+                                        website.
+                                    </p>
+                                </div class="services__card--content">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
             </article>
         </main>
     </body>
