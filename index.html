@@ -44,8 +44,8 @@
         </header>
 
         <!-- Main -->
-        <main style="height: 5000px;">
-            <article class="main__container">
+        <main>
+            <article class="main__container" id="home">
                 <!-- Hero -->
                 <section class="main__hero">
                     <div class="hero__container common__container">
@@ -355,7 +355,225 @@
                     </div>
                 </section>
 
+                <!-- Features -->
+                <section class="main__features">
+                    <div class="features__container common__container">
+                        <img src="./assets/img/hero-flower-1.svg" alt="" class="features__flower">
+                        <img src="./assets/img/features-line.svg" alt="" class="features__line">
+                        <article class="features__content">
+                            <div class="features__text">
+                                <h2 class="features--title">A quick glance of our past projects</h2>
+                            </div>
+
+                            <div class="features__sub-text">
+                                <p class="features--desc">Are you strive for the fast project simplicity and clarity. Great design is born of those two things. </p>
+                                <a href="https://www.youtube.com/watch?v=Lf8df8FCJhk&list=RDLgmQmKNIDj0&index=2" class="features--link">
+                                    Browse all Projects 
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        id="arrow--right"
+                                    ></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <figure class="features__video-box">
+                            <video 
+                                src="./assets/video/JACK - J97  DƯỚI TÁN CÂY KHÔ HOA NỞ ( prod. Hino )  OFFICIAL VISUALIZER  Track No.1 (720p).mp4" 
+                                controls 
+                                preload="metadata"
+                                muted
+                                playsinline>
+                                <p>Trình duyệt của bạn không hỗ trợ video HTML5.</p>
+                            </video>
+
+                            <img src="./assets/img/video-btn.svg" alt="" class="features__video-box--icon">
+                        </figure>
+                    </div>
+                </section>
+
+                <!-- Service-Features -->
+                <section class="main__ser-fea">
+                    <div class="ser-fea__container common__container">
+                        <article class="ser-fea__content">
+                            <h2 class="ser-fea--title">Share the features that help your customers</h2>
+                            <p class="ser-fea--desc">You already know that the customer experience doesn't end with a sale — it's an ongoing work in progress that companies should be constantly seeking to improve and iterate on.</p>
+                        </article>
+
+                        <div class="ser-fea__services">
+                            <div class="ser-fea__services--item">
+                                <i class="fa-solid fa-file-pen item--icon"></i>
+                                <h3 class="item--title">Blog</h3>
+                                <p class="item--desc">We've researched numerous agencies and complied a list of digital marketing agency blogs you should read to stay ahead of your rivals and succeed online!</p>
+                            </div>
+
+                            <div class="ser-fea__services--item">
+                                <i class="fa-solid fa-file-circle-check item--icon"></i>
+                                <h3 class="item--title">Documention</h3>
+                                <p class="item--desc">We've researched numerous agencies and complied a list of digital marketing agency blogs you should read to stay ahead of your rivals and succeed online!</p>
+                            </div>
+
+                            <div class="ser-fea__services--item">
+                                <i class="fa-solid fa-people-group item--icon"></i>
+                                <h3 class="item--title">Customers</h3>
+                                <p class="item--desc">We've researched numerous agencies and complied a list of digital marketing agency blogs you should read to stay ahead of your rivals and succeed online!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Blog -->
+                <section class="main__blog" id="blog">
+                    <div class="blog__container common__container">
+                        <article class="blog__content">
+                            <span class="blog--sub-title">BLOG & ARTICLES</span>
+                            <h2 class="blog--title">Take a look at our latest articles and resources</h2>
+                        </article>
+    
+                        <p class="blog__desc">The best agency are the ones ideated with clients. we corporate your ideas with memorable</p>
+                    
+                        <div class="blog__card">
+                            <div class="blog__card--item">
+                                <img src="./assets/img/blog-img-1.png" alt="" class="blog__card--image">
+                                <a href="#!" class="blog__card--btn">STORIES</a>
+                                <h3 class="blog__card--title">What did we learn from nunning over 100 design sprints in less the year?</h3>
+                                <div class="blog__card--separation"></div>
+                                <time datetime="2022-1-29" class="blog__card--time">JANUARY 29, 2022</time>
+                            </div>
+
+                            <div class="blog__card--item">
+                                <img src="./assets/img/blog-img-2.png" alt="" class="blog__card--image">
+                                <a href="#!" class="blog__card--btn">STORIES</a>
+                                <h3 class="blog__card--title">The difference between the UI/UX design a simple guide for beginner's</h3>
+                                <div class="blog__card--separation"></div>
+                                <time datetime="2022-1-29" class="blog__card--time">JANUARY 29, 2022</time>
+                            </div>
+
+                            <div class="blog__card--item">
+                                <img src="./assets/img/blog-img-3.png" alt="" class="blog__card--image">
+                                <a href="#!" class="blog__card--btn">STORIES</a>
+                                <h3 class="blog__card--title">How marketing can help your business more than anything.</h3>
+                                <div class="blog__card--separation"></div>
+                                <time datetime="2022-1-29" class="blog__card--time">JANUARY 29, 2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </article>
         </main>
+
+        <!-- Footer -->
+         <footer class="footer" id="contact">
+            <div class="footer__container common__container">
+                <article class="footer__content">
+                    <h2 class="footer--title">Sign up for our newsletter</h2>
+                    <form action="/Signup">
+                        <label class="footer__btn">
+                            <input type="email" required autocomplete="email" placeholder="Enter your email">
+                        </label>
+
+                        <i class="fa-solid fa-arrow-right" id="arrow--right"></i>
+                    </form>
+                    <div class="footer__separation"></div>
+
+                    <div class="footer__social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </article>
+
+                <div class="footer__contact">
+                    <div class="footer__list-box">
+                        <span class="footer__title-list">Pages</span>
+    
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Home</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">About</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Blog</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Blog Post</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__list-box">
+                        <span class="footer__title-list">Product</span>
+    
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Home</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">About</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Blog</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Blog Post</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__list-box">
+                        <span class="footer__title-list">Overview</span>
+    
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Home</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">About</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Blog</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Blog Post</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__list-box">
+                        <span class="footer__title-list">About us</span>
+    
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Home</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">About</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Blog</a>
+                            </li>
+    
+                            <li class="footer__list-item">
+                                <a href="#!" class="footer--item">Blog Post</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer--separation common__container" id="under-line"></div>
+         </footer>
     </body>
 </html>
